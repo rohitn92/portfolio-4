@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+@import url("../fonts/didot.ttf");
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-top: 6.250em;
+  padding-bottom: 3em;
+  opacity: 0.9;
+  background: white;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); }
+  header .container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative; }
+
+.logo-container {
+  display: inline-block;
+  position: relative; }
+
+#menu-list {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  #menu-list li {
+    display: inline-block;
+    margin: 0 1.0em;
+    box-sizing: border-box;
+    font-size: 1em; }
+    #menu-list li a {
+      text-decoration: none;
+      color: #555555; }
+    #menu-list li.active {
+      font-weight: bold;
+      position: relative; }
+      #menu-list li.active:after {
+        background-color: #22deff;
+        box-shadow: 0 8px 17px 0 rgba(35, 223, 255, 0.17), 0 3px 8px 0 rgba(34, 222, 255, 0.21);
+        bottom: 0;
+        content: ' ';
+        display: block;
+        height: 50%;
+        left: 10%;
+        border-radius: 1px;
+        opacity: 1;
+        position: absolute;
+        width: 110%;
+        z-index: -1;
+        top: 60%; }
+    #menu-list li.cta {
+      margin: 0 0 0 1em;
+      padding: 0.5em 1.5em;
+      background: #22deff;
+      box-shadow: 0 15px 30px 3px rgba(35, 223, 255, 0.17), 0 5px 15px 0 rgba(34, 222, 255, 0.21); }
+      #menu-list li.cta a {
+        color: white; }
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Didot;
+  font-weight: lighter;
+  color: #333333;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 4.500em; }
+
+h4 {
+  font-size: 1.500em; }
+
+p {
+  font-size: 1.125em;
+  color: #333333;
+  font-weight: 400; }
+
+.underline {
+  position: relative;
+  padding-bottom: 3px;
+  text-decoration: none;
+  color: #333333; }
+  .underline:after {
+    background-color: #22deff;
+    box-shadow: 0 5px 10px 0 rgba(34, 222, 255, 0.28), 0 2px 4px 0 rgba(34, 222, 255, 0.24);
+    bottom: 0;
+    content: ' ';
+    display: block;
+    height: 3px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    top: 100%; }
+
+.grid {
+  display: block;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0px auto;
+  font-size: 0;
+  box-sizing: border-box;
+  position: fixed !important;
+  height: 100%;
+  z-index: -1; }
+
+.gridlines {
+  height: 100%;
+  position: absolute !important;
+  background-color: #ededed;
+  opacity: 0.65;
+  width: 1px; }
+
+.horizons {
+  width: 100%;
+  position: absolute !important;
+  background-color: #ededed;
+  opacity: 0.65;
+  height: 1px; }
+
+.hori-first {
+  top: 248px; }
+
+.hori-second {
+  top: 284px; }
+
+.hori-third {
+  top: 284px;
+  left: 50%;
+  background-color: #000000;
+  height: 3px;
+  width: 0%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+.gridpos-zero {
+  left: 0%; }
+
+.gridpos-ten {
+  left: 10%; }
+
+.gridpos-thirty {
+  left: 30%; }
+
+.gridpos-fifty {
+  left: 50%; }
+
+.gridpos-seventy {
+  left: 70%; }
+
+.gridpos-ninety {
+  left: 90%; }
+
+.gridpos-hundred {
+  left: 100%; }
+
+body, ul, li, p {
+  padding: 0;
+  margin: 0; }
+
+#about-section {
+  width: 100%;
+  position: relative;
+  padding-top: 15em; }
+  #about-section .container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto; }
+  #about-section .section-img {
+    z-index: 1;
+    background-image: url("../img/about-pic.jpg");
+    width: 75%;
+    max-width: 40em;
+    height: 28em;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 10%;
+    border-radius: 3px; }
+    #about-section .section-img img {
+      width: 100%; }
+  #about-section h1 {
+    z-index: 3;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: #ffffff;
+    text-shadow: 0 15px 45px rgba(85, 102, 187, 0.4), 0 5px 15px rgba(79, 105, 190, 0.2); }
+  #about-section .section-info {
+    z-index: 2;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
+    padding: 3em 3em;
+    width: 65%;
+    max-width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 40%; }
+    #about-section .section-info p {
+      line-height: 1.83; }
+
+#skills-section {
+  width: 100%;
+  position: relative;
+  padding-top: 15em; }
+  #skills-section .container {
+    position: relative;
+    width: 80%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1); }
+  #skills-section .section-img {
+    z-index: 1;
+    background-image: url("../img/skills-pic.jpg");
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    height: 28em;
+    background-size: cover;
+    display: inline-block;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    vertical-align: top; }
+    #skills-section .section-img img {
+      width: 100%; }
+  #skills-section h1 {
+    z-index: 3;
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    left: 55%;
+    color: #444444;
+    text-shadow: 0 15px 45px rgba(122, 122, 122, 0.25), 0 5px 15px rgba(117, 117, 117, 0.2); }
+  #skills-section .section-info {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    height: 28em;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #skills-section .section-info ul {
+      padding: 0 3em 0 5em;
+      color: #555555; }
+      #skills-section .section-info ul li {
+        color: #333333;
+        font-size: 1.2em;
+        padding: 0.5em 0.5em; }
+
+#work-section {
+  width: 100%;
+  position: relative;
+  padding-top: 15em; }
+  #work-section .container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px 0 rgba(50, 50, 93, 0.1), 0 -5px 15px 0 rgba(0, 0, 0, 0.04); }
+  #work-section .section-img, #work-section .section-img-green {
+    z-index: 1;
+    background-image: url("../img/work-pic.jpg");
+    width: 100%;
+    height: 35em;
+    background-size: contain;
+    background-position: 10% 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 3px; }
+    #work-section .section-img img, #work-section .section-img-green img {
+      width: 100%; }
+  #work-section .section-img-green {
+    background-image: url("../img/work-img-green.jpg");
+    background-color: #23FCAD; }
+  #work-section h1 {
+    vertical-align: top;
+    z-index: 3;
+    display: inline-block;
+    position: absolute;
+    left: -0.7em;
+    text-align: center;
+    line-height: 0.9;
+    color: #444444;
+    text-shadow: 0 15px 45px rgba(85, 102, 187, 0.4), 0 5px 15px rgba(79, 105, 190, 0.2); }
+  #work-section .section-info {
+    vertical-align: top;
+    z-index: 2;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
+    padding: 3em 3em;
+    position: absolute;
+    top: 10%;
+    right: 10%; }
+  #work-section .work-item {
+    display: flex;
+    padding-bottom: 1em; }
+    #work-section .work-item .time-period {
+      color: #333333;
+      vertical-align: top; }
+    #work-section .work-item .job-desc {
+      vertical-align: top;
+      color: #555555;
+      display: inline-block;
+      line-height: 1.6;
+      font-size: 1em; }
+    #work-section .work-item .company-name {
+      color: #333333;
+      font-size: 1.250em;
+      line-height: 1; }
+  #work-section .big-cta {
+    background: #1688F3;
+    color: white;
+    display: inline-block;
+    padding: 1.5em 3em;
+    border-radius: 2px;
+    position: absolute; }

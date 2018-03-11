@@ -1,0 +1,70 @@
+#skills-section{
+  width: 100%;
+  position: relative;
+  padding-top: 15em;
+
+  .container {
+    position: relative;
+    width: 80%;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
+  }
+
+  .section-img{
+    z-index: 1;
+    background-image: url('../img/skills-pic.jpg');
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+    height: 28em;
+    background-size: cover;
+    display: inline-block;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    vertical-align: top;
+    img{
+      width: 100%;
+    }
+  }
+
+  h1{
+    z-index: 3;
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    left: 55%;
+    color: #444444;
+    text-shadow: 0 15px 45px rgba(122, 122, 122, 0.25), 0 5px 15px rgba(117, 117, 117, 0.2);
+  }
+
+
+    .section-info{
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+      height: 28em;
+      box-sizing: border-box;
+      vertical-align: top;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ul{
+        padding: 0 3em 0 5em;
+        color: #555555;
+        li{
+          color: #333333;
+          font-size: 1.2em;
+          padding: 0.5em 0.5em;
+        }
+      }
+    }
+
+}

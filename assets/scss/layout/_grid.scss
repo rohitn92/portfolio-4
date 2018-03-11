@@ -1,0 +1,75 @@
+
+  .grid {
+      display: block;
+      top: 0px;
+      left: 0;
+      right: 0;
+      //max-width: 1680px;
+      width: 100%;
+      margin: 0px auto;
+      font-size: 0;
+      box-sizing: border-box;
+  		position: fixed !important;
+  		height: 100%;
+  		z-index: -1;
+  }
+
+
+  .gridlines {
+      height: 100%;
+  		position: absolute !important;
+  		background-color: #ededed;
+  		opacity: 0.65;
+  		width: 1px;
+  }
+
+  .horizons {
+      width: 100%;
+  		position: absolute !important;
+  		background-color: #ededed;
+  		opacity: 0.65;
+  		height: 1px;
+  }
+
+  .hori-first{
+  	top: 248px;
+  }
+
+  .hori-second{
+  	top: 284px;
+  }
+
+  .hori-third{
+  	top: 284px;
+  	left: 50%;
+  	background-color: #000000;
+  	height: 3px;
+  	width: 0%;
+  	-webkit-transition: all 1s ease-in-out;
+  			-moz-transition: all 1s ease-in-out;
+  			-o-transition: all 1s ease-in-out;
+  			-ms-transition: all 1s ease-in-out;
+  			transition: all 1s ease-in-out;
+  }
+
+  .gridpos-zero {
+      left: 0%;
+  }
+  .gridpos-ten {
+      left: 10%;
+  }
+  .gridpos-thirty {
+      left: 30%;
+  }
+  .gridpos-fifty {
+      left: 50%;
+  }
+  .gridpos-seventy {
+      left: 70%;
+  }
+  .gridpos-ninety {
+      left: 90%;
+  }
+  .gridpos-hundred {
+      left: 100%;
+  }

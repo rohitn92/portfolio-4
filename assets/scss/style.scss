@@ -1,0 +1,22 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skels';
+
+
+// Component.
+
+@import 'components/buttons';
+@import 'components/header';
+
+// Layout.
+
+@import 'layout/typography';
+@import 'layout/grid';
+@import 'layout/main';
+
+// Pages.
+
+@import 'partials/about-section';
+@import 'partials/skills-section';
+@import 'partials/work-section'; 
