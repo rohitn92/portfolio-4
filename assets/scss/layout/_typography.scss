@@ -6,6 +6,7 @@ body{
   font-family: 'Noto Sans', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility !important;
+  font-size: 14px;
 }
 
 
@@ -18,7 +19,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-  font-size: 4.500em;
+  font-size: 3.500em;
 }
 
 h2{
@@ -30,7 +31,7 @@ h4{
 }
 
 p{
-  font-size: 1.125em;
+  font-size: 1em;
   color: #333333;
   font-weight: 400;
 }
@@ -53,4 +54,17 @@ p{
       width: 100%;
       top: 100%;
     }
+}
+
+@media screen and (min-width: 980px) {
+body{
+  font-size: 16px;
+}
+}
+
+
+@media screen and (min-width: 1280px) {
+body{
+  font-size: 18px;
+}
 }
