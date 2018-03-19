@@ -223,7 +223,7 @@ body, ul, li, p {
   @media screen and (min-width: 1024px) {
     #about-section .container {
       width: 70%;
-      max-width: 70%; }
+      max-width: 1440px; }
     #about-section .section-img {
       width: 75%;
       max-width: 40em;
@@ -245,60 +245,94 @@ body, ul, li, p {
   padding-top: 15em; }
   #skills-section .container {
     position: relative;
-    width: 80%;
-    display: -webkit-flex;
-    /* Safari */
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1); }
+    width: 100%;
+    margin: 0 auto; }
+  #skills-section .section-cover {
+    width: 100%;
+    position: relative; }
   #skills-section .section-img {
     z-index: 1;
     background-image: url("../img/skills-pic.jpg");
-    -webkit-flex: 1;
-    /* Safari 6.1+ */
-    -ms-flex: 1;
-    /* IE 10 */
-    flex: 1;
-    height: 28em;
+    width: 100%;
+    height: 20em;
     background-size: cover;
-    display: inline-block;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
-    vertical-align: top; }
+    border-radius: 3px; }
     #skills-section .section-img img {
       width: 100%; }
-  #skills-section h1 {
-    z-index: 3;
-    display: inline-block;
-    position: absolute;
-    top: -50px;
-    left: 55%;
-    color: #444444;
-    text-shadow: 0 15px 45px rgba(122, 122, 122, 0.25), 0 5px 15px rgba(117, 117, 117, 0.2); }
   #skills-section .section-info {
+    z-index: 2;
+    position: relative;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
     box-sizing: border-box;
     background-color: #ffffff;
-    -webkit-flex: 1;
-    /* Safari 6.1+ */
-    -ms-flex: 1;
-    /* IE 10 */
-    flex: 1;
-    height: 28em;
-    box-sizing: border-box;
-    vertical-align: top;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
+    padding: 3em 15%;
+    background-image: url("../img/pen.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 110% bottom; }
+    #skills-section .section-info h1 {
+      position: absolute;
+      z-index: 3;
+      top: -0.600em;
+      display: inline-block;
+      color: #444444;
+      text-shadow: 0 15px 45px rgba(122, 122, 122, 0.25), 0 5px 15px rgba(117, 117, 117, 0.2); }
     #skills-section .section-info ul {
-      padding: 0 3em 0 5em;
       color: #555555; }
       #skills-section .section-info ul li {
         color: #333333;
         font-size: 1.2em;
         padding: 0.5em 0.5em; }
+  @media screen and (min-width: 480px) {
+    #skills-section .container {
+      width: 80%;
+      max-width: 500px; } }
+  @media screen and (min-width: 1024px) {
+    #skills-section .container {
+      width: 80%;
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: row;
+      max-width: 1440px; }
+    #skills-section .section-img {
+      -webkit-flex: 1;
+      /* Safari 6.1+ */
+      -ms-flex: 1;
+      /* IE 10 */
+      flex: 1;
+      height: 28em;
+      background-size: cover;
+      display: inline-block;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      vertical-align: top; }
+      #skills-section .section-img img {
+        width: 100%; }
+    #skills-section .section-info {
+      -webkit-flex: 1;
+      /* Safari 6.1+ */
+      -ms-flex: 1;
+      /* IE 10 */
+      flex: 1;
+      height: 28em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      vertical-align: top;
+      background-size: 300px; }
+      #skills-section .section-info h1 {
+        right: 40%; }
+      #skills-section .section-info ul {
+        padding: 0 3em 0 5em;
+        color: #555555; }
+        #skills-section .section-info ul li {
+          color: #333333;
+          font-size: 1.2em;
+          padding: 0.5em 0.5em; } }
 
 #work-section {
   width: 100%;
