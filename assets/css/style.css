@@ -283,7 +283,7 @@ body, ul, li, p {
       color: #555555; }
       #skills-section .section-info ul li {
         color: #333333;
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 0.5em 0.5em; }
   @media screen and (min-width: 480px) {
     #skills-section .container {
@@ -341,67 +341,104 @@ body, ul, li, p {
   #work-section .container {
     position: relative;
     width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 15px 35px 0 rgba(50, 50, 93, 0.1), 0 -5px 15px 0 rgba(0, 0, 0, 0.04); }
-  #work-section .section-img, #work-section .section-img-green {
-    z-index: 1;
-    background-image: url("../img/work-pic.jpg");
+    margin: 0 auto; }
+  #work-section .section-cover {
     width: 100%;
-    height: 35em;
-    background-size: contain;
-    background-position: 10% 0;
-    background-repeat: no-repeat;
-    display: inline-block;
-    border-radius: 3px; }
-    #work-section .section-img img, #work-section .section-img-green img {
-      width: 100%; }
-  #work-section .section-img-green {
+    position: relative; }
+  #work-section .section-img {
+    z-index: 1;
     background-image: url("../img/work-img-green.jpg");
-    background-color: #23FCAD; }
-  #work-section h1 {
-    vertical-align: top;
-    z-index: 3;
-    display: inline-block;
-    position: absolute;
-    left: -0.7em;
-    text-align: center;
-    line-height: 0.9;
-    color: #444444;
-    text-shadow: 0 15px 45px rgba(85, 102, 187, 0.4), 0 5px 15px rgba(79, 105, 190, 0.2); }
+    width: 100%;
+    height: 15em;
+    background-size: cover;
+    border-radius: 3px; }
+    #work-section .section-img img {
+      width: 100%; }
   #work-section .section-info {
-    vertical-align: top;
     z-index: 2;
+    position: relative;
     border-radius: 3px;
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
-    padding: 3em 3em;
-    position: absolute;
-    top: 10%;
-    right: 10%; }
-  #work-section .work-item {
-    display: flex;
-    padding-bottom: 1em; }
-    #work-section .work-item .time-period {
-      color: #333333;
-      vertical-align: top; }
-    #work-section .work-item .job-desc {
-      vertical-align: top;
-      color: #555555;
+    padding: 3em 10%; }
+    #work-section .section-info h1 {
+      position: absolute;
+      z-index: 3;
+      top: -0.700em;
+      right: 0.5em;
+      text-align: center;
       display: inline-block;
-      line-height: 1.6;
-      font-size: 1em; }
-    #work-section .work-item .company-name {
-      color: #333333;
-      font-size: 1.250em;
-      line-height: 1; }
-  #work-section .big-cta {
-    background: #1688F3;
-    color: white;
-    display: inline-block;
-    padding: 1.5em 3em;
-    border-radius: 2px;
-    position: absolute; }
+      color: #ffffff;
+      text-shadow: 0 15px 30px rgba(85, 102, 187, 0.46), 0 5px 10px rgba(79, 105, 190, 0.28); }
+    #work-section .section-info p {
+      line-height: 1.83; }
+    #work-section .section-info .work-item {
+      display: flex;
+      padding-bottom: 1em; }
+      #work-section .section-info .work-item .time-period {
+        color: #333333;
+        vertical-align: top;
+        font-size: 0.8em; }
+      #work-section .section-info .work-item .job-desc {
+        vertical-align: top;
+        color: #555555;
+        display: inline-block;
+        line-height: 1.6;
+        font-size: 0.9em; }
+      #work-section .section-info .work-item .company-name {
+        color: #333333;
+        font-size: 1.250em;
+        line-height: 1; }
+    #work-section .section-info .big-cta {
+      background: #1688F3;
+      color: white;
+      display: inline-block;
+      padding: 1em 2em;
+      border-radius: 2px;
+      margin-top: 1em; }
+  @media screen and (min-width: 480px) {
+    #work-section .container {
+      width: 80%;
+      max-width: 500px; } }
+  @media screen and (min-width: 1024px) {
+    #work-section .container {
+      width: 100%;
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: row;
+      max-width: 1440px; }
+    #work-section .section-img {
+      z-index: 1;
+      width: 100%;
+      height: 30em;
+      background-size: cover;
+      background-position: 10% 0;
+      background-repeat: no-repeat;
+      display: inline-block;
+      border-radius: 3px; }
+      #work-section .section-img img {
+        width: 100%; }
+    #work-section .section-info {
+      vertical-align: top;
+      z-index: 2;
+      border-radius: 3px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
+      padding: 3em 3em;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      width: 40%; }
+      #work-section .section-info h1 {
+        line-height: 1;
+        top: -0.3em;
+        color: #444444; }
+    #work-section .big-cta {
+      padding: 1.5em 3em;
+      position: absolute; } }
 
 #contact-section {
   width: 100%;
@@ -410,45 +447,74 @@ body, ul, li, p {
   #contact-section .container {
     position: relative;
     width: 100%;
-    margin: 0 auto; }
-  #contact-section h1 {
-    text-shadow: 0 15px 45px rgba(255, 84, 154, 0.4), 0 5px 15px rgba(255, 84, 154, 0.2);
-    z-index: 3;
-    display: inline-block;
-    position: absolute;
-    top: -0.5em;
-    left: 20%;
-    color: #ffffff; }
-  #contact-section #contact-list {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    position: relative;
-    left: 30%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 34px;
+    border-image-source: linear-gradient(328deg, #a445b2, #ff0066);
     box-sizing: border-box;
-    border: solid 34px transparent;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(310deg, #a445b2, #ff0066);
-    background-origin: border-box;
-    background-clip: content-box, border-box; }
-    #contact-section #contact-list h2 {
-      color: #fe0065;
-      padding-left: 30%;
-      padding-bottom: 1em; }
-      #contact-section #contact-list h2:nth-child(1) {
-        padding-top: 3em; }
-      #contact-section #contact-list h2:nth-child(4) {
-        padding-bottom: 3em; }
+    border-right-width: 0;
+    border-image-slice: 1; }
+  #contact-section .section-cover {
+    width: 100%;
+    position: relative; }
+  #contact-section .section-img {
+    z-index: 1;
+    background-image: url("../img/about-pic.jpg");
+    width: 100%;
+    height: 20em;
+    background-size: cover;
+    border-radius: 3px; }
+    #contact-section .section-img img {
+      width: 100%; }
   #contact-section .section-info {
     z-index: 2;
+    position: relative;
     border-radius: 3px;
     box-sizing: border-box;
     background-color: #ffffff;
-    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
-    padding: 3em 5em;
-    width: 65%;
-    max-width: 500px;
-    position: absolute;
-    top: 30%;
-    left: 10%; }
+    padding: 8em 15% 4em 15%; }
+    #contact-section .section-info h1 {
+      position: absolute;
+      z-index: 3;
+      left: -0.4em;
+      top: -0.600em;
+      display: inline-block;
+      color: #ffffff;
+      text-shadow: 0 15px 45px rgba(85, 102, 187, 0.4), 0 5px 15px rgba(79, 105, 190, 0.2); }
     #contact-section .section-info p {
-      line-height: 1.83; }
+      line-height: 2.25; }
+  #contact-section #contact-list {
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 5em; }
+    #contact-section #contact-list a {
+      display: inline-block;
+      margin-left: 2em; }
+    #contact-section #contact-list h2 {
+      color: #fe0065;
+      display: none; }
+    #contact-section #contact-list img {
+      display: inline-block;
+      width: 1.8em; }
+  @media screen and (min-width: 480px) {
+    #contact-section .container {
+      width: 80%;
+      max-width: 500px; } }
+  @media screen and (min-width: 1024px) {
+    #contact-section .container {
+      width: 70%;
+      max-width: 1440px; }
+    #contact-section .section-img {
+      width: 75%;
+      max-width: 40em;
+      height: 28em;
+      display: inline-block; }
+      #contact-section .section-img img {
+        width: 100%; }
+    #contact-section .section-info {
+      padding: 3em 3em;
+      width: 65%;
+      max-width: 500px;
+      position: absolute;
+      top: 30%;
+      left: 40%; } }

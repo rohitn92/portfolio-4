@@ -1,5 +1,4 @@
 #work-section{
-
   width: 100%;
   position: relative;
   padding-top: 15em;
@@ -8,15 +7,103 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    box-shadow: 0 15px 35px 0 rgba(50, 50, 93, 0.1), 0 -5px 15px 0 rgba(0, 0, 0, 0.04);
   }
 
-  .section-img, .section-img-green {
-    z-index: 1;
-    background-image: url('../img/work-pic.jpg');
+  .section-cover{
     width: 100%;
-    height: 35em;
-    background-size: contain;
+    position: relative;
+  }
+
+  .section-img{
+    z-index: 1;
+    background-image: url('../img/work-img-green.jpg');
+    width: 100%;
+    height: 15em;
+    background-size: cover;
+    border-radius: 3px;
+    img{
+      width: 100%;
+    }
+  }
+
+
+  .section-info{
+    z-index: 2;
+    position: relative;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px 0 rgba(79, 105, 190, 0.1);
+    padding: 3em 10%;
+
+    h1{
+      position: absolute;
+      z-index: 3;
+      top: -0.700em;
+      right: 0.5em;
+      text-align: center;
+      display: inline-block;
+      color: #ffffff;
+      text-shadow: 0 15px 30px rgba(85, 102, 187, 0.46), 0 5px 10px rgba(79, 105, 190, 0.28);
+    }
+    p{
+      line-height: 1.83;
+    }
+
+    .work-item{
+    display: flex;
+    padding-bottom: 1em;
+    .time-period{
+      color: #333333;
+      vertical-align: top;
+      font-size: 0.8em;
+    }
+    .job-desc{
+      vertical-align: top;
+      color: #555555;
+      display: inline-block;
+      line-height: 1.6;
+      font-size: 0.9em;
+    }
+    .company-name{
+      color: #333333;
+      font-size: 1.250em;
+      line-height: 1;
+    }
+  }
+
+
+  .big-cta{
+    background: #1688F3;
+    color: white;
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 2px;
+    margin-top: 1em;
+  }
+
+  }
+
+
+  @media screen and (min-width: 480px) {
+    .container{
+    width: 80%;
+    max-width: 500px;
+  }
+  }
+  @media screen and (min-width: 1024px) {
+    .container{
+      width: 100%;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      flex-direction: row;
+      max-width: 1440px;
+  }
+  .section-img{
+    z-index: 1;
+    width: 100%;
+    height: 30em;
+    background-size: cover;
     background-position: 10% 0;
     background-repeat: no-repeat;
     display: inline-block;
@@ -25,24 +112,6 @@
       width: 100%;
     }
   }
-
-  .section-img-green {
-    background-image: url('../img/work-img-green.jpg');
-    background-color: #23FCAD;
-  }
-
-  h1{
-    vertical-align: top;
-    z-index: 3;
-    display: inline-block;
-    position: absolute;
-    left: -0.7em;
-    text-align: center;
-    line-height: 0.9;
-    color: #444444;
-    text-shadow: 0 15px 45px rgba(85, 102, 187, 0.4), 0 5px 15px rgba(79, 105, 190, 0.2);
-  }
-
   .section-info{
     vertical-align: top;
     z-index: 2;
@@ -53,39 +122,20 @@
     padding: 3em 3em;
     position: absolute;
     top: 10%;
-    right: 10%;
-  }
+    left: 50%;
+    width: 40%;
 
-  .work-item{
-    display: flex;
-    padding-bottom: 1em;
-    .time-period{
-      color: #333333;
-      vertical-align: top;
-    }
-    .job-desc{
-      vertical-align: top;
-      color: #555555;
-      display: inline-block;
-      line-height: 1.6;
-      font-size: 1em;
-    }
-    .company-name{
-      color: #333333;
-      font-size: 1.250em;
+    h1{
       line-height: 1;
+      top: -0.3em;
+      color: #444444;
     }
+}
+.big-cta{
+padding: 1.5em 3em;
+position: absolute;
+}
   }
-
-  .big-cta{
-    background: #1688F3;
-    color: white;
-    display: inline-block;
-    padding: 1.5em 3em;
-    border-radius: 2px;
-    position: absolute;
-  }
-
 
 
 }
